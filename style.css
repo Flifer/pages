@@ -1,0 +1,290 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+a {text-decoration: none;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*css reseted*/
+
+body{
+    background-color: #1E1E1E;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.container {
+    max-width: 2560px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.top-background {
+    width: 100%;
+    height: 3700px;
+    background-color: #2E7D3229;
+    position: absolute;
+    top: 0px;
+    z-index: -5;
+}
+
+.top-background-2 {
+    width: 100%;
+    height: 3700px;
+    background-image: url("./src/Bitmap.png");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    z-index: -4;
+    opacity: 0.7;
+}
+
+header .container {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+header .logo {
+    width: 150px;
+    height: 150px;
+    background-image: url("./src/logo.png");
+    background-size: cover;
+}
+
+header .title {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 39px;
+    margin: 55px;
+}
+
+header nav {
+    max-width: fit-content;
+}
+
+.menu {
+    margin: 60px 0px;
+}
+
+.menu li {
+    display: inline;
+    color: #fff;
+    padding: 10px 150px 10px 150px;
+    border-right: 1px solid #fff;
+}
+
+.menu li:nth-last-child(1) {
+    border-right: 0px solid #fff;
+}
+
+.menu li:hover {
+    text-shadow: 5px 5px 5px pink;
+    cursor: pointer;
+}
+
+main .container {
+    max-width: 2330px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.first-section {
+    margin: 121px auto 180px;
+    display: flex;
+    padding-top: 100px;
+}
+
+.first-section .text-area {
+    width: calc(50% - 10px);
+    color: #FFF;
+}
+
+.first-section .text-area h2 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 102px;
+}
+
+.first-section .text-area p {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 64px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+.first-section a {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 30px 40px;
+    margin: 170px 70px 70px 70px;
+    text-decoration: none;
+}
+
+.first-section .orange-link {
+    background-color: #FFA000;
+    border: 1px solid #FFA000;
+}
+
+.first-section .banner {
+    width: calc(50% - 10px);
+    height: 1024px;
+    background-image: url("./src/crypto_banner.png");
+    background-size: cover;
+}
+
+.second-section {
+    display: flex;
+}
+
+.second-section .image {
+    width: 710px;
+    height: 795px;
+    background-image: url("./src/Group\ 21.png");
+    background-size: cover;
+    z-index: 10;
+}
+
+.second-section .text {
+    width: 1575px;
+    background: #424242;
+    border-radius: 50px;
+    height: fit-content;
+    position: relative;
+    right: 350px;
+    top: 0px;
+}
+
+.second-section .text h2 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFA000;
+    margin: 140px 160px 38px 600px;
+}
+
+.second-section .text p {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 68px;
+    color: #fff;
+    margin: 38px 84px 180px 600px;
+}
+
+section.faq {
+    margin-top: 55px;
+    padding-bottom: 100px;
+}
+
+section.faq h2 {
+    font-size: 64px;
+    line-height: 64px;
+    margin-bottom: 72px;
+    color: #fff;
+}
+
+section.faq div.flex-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion:nth-child(1) {
+    border-radius: 15px 15px 0px 0px;
+    padding: 52px 26px 40px;
+}
+
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 23px 26px 40px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 10px 20px;
+    font-size: 25px;
+    line-height: 50px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel:nth-last-child(1) {
+    border-radius: 0px 0px 15px 15px;
+}
+
+footer .lists {
+    display: flex;
+    justify-content: space-around;
+    color: #FFF;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+footer .lists li {
+    margin-bottom: 20px;
+}
