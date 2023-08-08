@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Курсы</title>
+    <title>CryptoEd</title>
+    <script src="https://kit.fontawesome.com/fc14e25ec8.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./src/cryptoEd.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <a href="" class="header__logo"></a>
+                <div class="header__logo-wrap">
+                    <a href="" class="header__logo"></a>
+                    <a href="" class="header__logo-text">CryptoEd</a>
+                </div>
+    
                 <div class="header__menu menu">
                     <div class="menu__icon">
                         <span></span>
@@ -18,9 +30,35 @@
                     <div>
                         <nav class="menu__body">
                             <ul class="menu__list"> 
-                                <li><a data-goto=".page__section_1" href="#" class="menu__link">Раздел №1</a></li>
-                                <li><a data-goto=".page__section_2" href="#" class="menu__link">Раздел №2</a></li>
-                                <li><a data-goto=".page__section_3" href="#" class="menu__link">Раздел №3</a></li>
+                                <li>
+                                    <a data-goto=".page__section_1" href="#" class="menu__link _ruLang">Главная</a>
+                                    <a data-goto=".page__section_1" href="#" class="menu__link _ukrLang _notCurrentLang">Головна</a>
+                                </li>
+
+                                <li>
+                                    <a data-goto=".page__section_2" href="#" class="menu__link _ruLang">Партнёры</a>
+                                    <a data-goto=".page__section_2" href="#" class="menu__link _ukrLang _notCurrentLang">Партнери</a>
+                                </li>
+
+                                <li>
+                                    <a data-goto=".page__section_3" href="#" class="menu__link _ruLang">Курсы</a>
+                                    <a data-goto=".page__section_3" href="#" class="menu__link _ukrLang _notCurrentLang">Засідання</a>
+                                </li>
+
+                                <li>
+                                    <a data-goto=".page__section_4" href="#" class="menu__link _ruLang">Отзывы</a>
+                                    <a data-goto=".page__section_4" href="#" class="menu__link _ukrLang _notCurrentLang">Відгуки</a>
+                                </li>
+
+                                <li>
+                                    <a data-goto=".page__section_5" href="#" class="menu__link _ruLang">Контакты</a>
+                                    <a data-goto=".page__section_5" href="#" class="menu__link _ukrLang _notCurrentLang">Зв'язок</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="menu__link _langSwitch _ruLang"> <i class="fa-solid fa-earth-europe _langSwitch" style="color: #ffffff;"></i> Укр</a>
+                                    <a href="#" class="menu__link _langSwitch _ukrLang _notCurrentLang"> <i class="fa-solid fa-earth-europe _langSwitch" style="color: #ffffff;"></i> Рус</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -29,39 +67,177 @@
         </header>
         <main class="page">
             <section class="page__section page__section_1">
-                <h1 class="page__title">Первая статья</h1>
-                <div class="page__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
+                <div class="page__section_1__container">
+                    <div class="page__section_1__content">
+                        <h1 class="page__section_1__title _ruLang">Обучись торговле криптой - улучши свою жизнь</h1>
+                        <h1 class="page__section_1__title _ukrLang _notCurrentLang">Навчися торгівлі криптою - покращи свіє життя</h1>
+                        <p class="page__section_1__text _ruLang">Хочешь научиться инвестированию ? Хочешь встретить старость миллионером ? Записывайся на обучение чтобы узнать как ты можешь управлять деньгами, а не они тобой</p>
+                        <p class="page__section_1__text _ukrLang _notCurrentLang">Хочеш навчитися інвестуванню? Хочеш зустріти старість мільйонером? Записуйся на навчання щоб дізнатися, як ти можеш керувати грошима, а не вони тобою</p>
+                        <div class="page__section_1__reviews">
+                            <div>
+                                <a data-goto=".page__section_5" href="#" class="menu__link page__section_1__reviews__invite-btn _ruLang">Записаться&nbsp;сейчас</a>
+                                <a data-goto=".page__section_5" href="#" class="menu__link page__section_1__reviews__invite-btn _ukrLang _notCurrentLang">Записатися&nbsp;зараз</a>
+                            </div>
+                            <div class="page__section_1__reviews__student_1"></div>
+                            <div class="page__section_1__reviews__student_2"></div>
+                            <div class="page__section_1__reviews__student_3"></div>
+                            <div class="page__section_1__reviews__mark">
+                                <div class="page__section_1__reviews__mark__stars"><i class="fa-solid fa-star" style="color: #d8bf41;"></i><i class="fa-solid fa-star" style="color: #d8bf41;"></i><i class="fa-solid fa-star" style="color: #d8bf41;"></i><i class="fa-solid fa-star" style="color: #d8bf41;"></i><i class="fa-solid fa-star-half-stroke" style="color: #d8bf41;"></i></div>
+                                <h5 class="page__section_1__reviews__mark__title _ruLang">4,8 / 5 из 1000+ отзывов</h5>
+                                <h5 class="page__section_1__reviews__mark__title _ukrLang _notCurrentLang">4,5 / 5 з 1000+ відгуків</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__section_1__image"></div>
                 </div>
             </section>
 
             <section class="page__section page__section_2">
-                <h2 class="page__sub-title">Вторая статья</h2>
-                <div class="page__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
+                <div class="page__section_2__container">
+                    <h2 class="page__section_2__title _ruLang">Мы работаем с более чем 10+ компаниями</h2>
+                    <h2 class="page__section_2__title _ukrLang _notCurrentLang">Ми співпрацюємо із більш ніж 10+ компаніями</h2>
+                    <div class="page__section_2__partner _udemy"></div>
+                    <div class="page__section_2__partner _coursera"></div>
+                    <div class="page__section_2__partner _binance"></div>
+                </div>
+                <div class="page__section_2__container-2">
+                    <div class="page__section_2__educationArt">
+                        <h4 class="page__section_2__educationArt__title _ruLang">Процесс обучения</h4>
+                        <h4 class="page__section_2__educationArt__title _ukrLang _notCurrentLang">Навчання</h4>
+                        <p class="page__section_2__educationArt__sub-title _ruLang"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Одесса, Украина</p>
+                        <p class="page__section_2__educationArt__sub-title _ukrLang _notCurrentLang"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Одеса, Україна</p>
+                    </div>
+                    <div class="page__section_2__container-2__content">
+                        <h2 class="page__section_2__container-2__content__title _ruLang">Мы поможем Вам стать трейдером</h2>
+                        <h2 class="page__section_2__container-2__content__title _ukrLang _notCurrentLang">Ми допоможемо Вам стати трейдером</h2>
+                        <p class="page__section_2__container-2__content__text _ruLang">Мы даём полный спектр инструментов, инструкций и обучим основам торговли криптовалютными парами, фьючерсами, и тдтазтмзцмз зтзцтмзцтмзц зтзт з2таз тзтцс</p>
+                        <p class="page__section_2__container-2__content__text _ukrLang _notCurrentLang">Ми дамо повний список приладів , інструкцій и обучимо всьому всьому всьому омзцомзцм цмтщцтмщцм щцмоцзомзцм цщмоцомц цмтцщм</p>
+                        <a data-goto=".page__section_5" href="#" class="menu__link page__section_2__container-2__content__link _ruLang">Пройти&nbsp;курс</a>
+                        <a data-goto=".page__section_5" href="#" class="menu__link page__section_2__container-2__content__link _ukrLang _notCurrentLang">Пройти&nbsp;навчання</a>
+                    </div>
                 </div>
             </section>
 
             <section class="page__section page__section_3">
-                <h2 class="page__sub-title">Третья статья</h2>
-                <div class="page__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim ut sapiente expedita eum necessitatibus ea, facilis laudantium consectetur, voluptatum eos quae excepturi, dolorem dolor aspernatur. Eveniet, totam. Quibusdam, cum.</p>
+                <h2 class="page__section_3__title _ruLang">Регистрируйся на курс сегодня</h2>
+                <h2 class="page__section_3__title _ukrLang _notCurrentLang">Реєструйся на курс вже сьогодні</h2>
+                <div class="page__section_3__container">
+
+                    <div class="page__section_3__course">
+                        <div class="course__picture course__picture_1"></div>
+                        <h3 class="course__title">Новичок</h3>
+                        <h4 class="course__price">$450/курс</h4>
+                        <h5 class="course__price-per-lesson">$50/урок</h5>
+                        <p class="course__description">Курс включает в себя 10 уроков об основах криптовалютого рынка. Здесь научат необходимому базису для начинающего свой путь трейдера.</p>
+                        <a data-goto=".page__section_5" href="#" class="menu__link course__register-btn">Хочу !</a>
+                    </div>
+
+                    <div class="page__section_3__course">
+                        <div class="course__picture course__picture_2"></div>
+                        <h3 class="course__title">Профессионал</h3>
+                        <h4 class="course__price">$999/курс</h4>
+                        <h5 class="course__price-per-lesson">$110/урок</h5>
+                        <p class="course__description">Курс включает в себя 10 уроков о хитростях, стратегиях и о том как быть лучше большей части рынка.</p>
+                        <a data-goto=".page__section_5" href="#" class="menu__link course__register-btn">Хочу !</a>
+                    </div>
+
+                    <div class="page__section_3__course">
+                        <div class="course__picture course__picture_3"></div>
+                        <h3 class="course__title">Корпорация</h3>
+                        <h4 class="course__price">$1500/курс</h4>
+                        <h5 class="course__price-per-lesson">$150/урок</h5>
+                        <p class="course__description">Курс предназначен для копаний которые хотят поднять уровень своих сотрудников и вывести их на совершенно новый уровень познания этого бренного мира.</p>
+                        <a data-goto=".page__section_5" href="#" class="menu__link  course__register-btn">Хочу !</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section page__section_4">
+                <div class="owl-carousel owl-theme">
+
+                    <div class="item review">
+                        <div class="review__img review__img-1"></div>
+                        <div class="review__content">
+                            <h3 class="review__title">Что о нас говорят</h3>
+                            <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum vero vel, quas fugiat veniam dolorum explicabo voluptatibus officiis voluptate natus provident architecto corporis voluptatem. Commodi eum maxime quisquam expedita rerum?</p>
+                            <h4 class="review__name">Егор Корнилов</h4>
+                            <p class="review__job">Трейдер в QuantaTech</p>
+                        </div>
+                    </div>
+
+                    <div class="item review">
+                        <div class="review__img review__img-2"></div>
+                        <div class="review__content">
+                            <h3 class="review__title">Что о нас говорят</h3>
+                            <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum vero vel, quas fugiat veniam dolorum explicabo voluptatibus officiis voluptate natus provident architecto corporis voluptatem. Commodi eum maxime quisquam expedita rerum?</p>
+                            <h4 class="review__name">Егор Корнилов</h4>
+                            <p class="review__job">Трейдер в QuantaTech</p>
+                        </div>
+                    </div>
+
+                    <div class="item review">
+                        <div class="review__img review__img-3"></div>
+                        <div class="review__content">
+                            <h3 class="review__title">Что о нас говорят</h3>
+                            <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum vero vel, quas fugiat veniam dolorum explicabo voluptatibus officiis voluptate natus provident architecto corporis voluptatem. Commodi eum maxime quisquam expedita rerum?</p>
+                            <h4 class="review__name">Егор Корнилов</h4>
+                            <p class="review__job">Трейдер в QuantaTech</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section page__section_5">
+                <div>
+                    <h3 class="page__section_5__title">Оставьте заявку и наш оператор свяжется свами</h3>
+                    <form id="myForm">
+                        <label for="firstName">Имя:</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Илон" required>
+                        <br>
+                        
+                        <label for="lastName">Фамилия:</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Маск" required>
+                        <br>
+                        
+                        <label for="phoneNumber">Номер телефона:</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="(098) 321 44 55" required>
+                        <br>
+                        
+                        <button type="submit">Отправить</button>
+                      </form>
                 </div>
             </section>
         </main>
+        <footer>
+            <div class="footer-1">
+                <h5 class="footer__title">О компании</h5>
+                <p class="footer__text">QuantaTech была основана в 2021 году и запустила образовательную программу в мае 2023. Мы находимся по адресу Украина г.Одесса ул.Посмитного буд.2 Индекс 65069</p>
+            </div>
+            <div class="footer-2">
+                <h5 class="footer__title">Контакты</h5>
+                <h6 class="footer__link"><a href="mailto: flifer55@gmail.com">flifer55@gmail.com</a></h6>
+                <h6 class="footer__link"><a href="tel:+380962704963">(096) 270 49 63</a></h6>
+            </div>
+        </footer>
     </div>
-    <script defer src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:100,
+        nav:false,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:1
+            }
+        }
+    })
+    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
