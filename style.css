@@ -154,7 +154,6 @@ body._lock {
     font-size: 50px;
     font-weight: 800;
     line-height: 115%;
-    text-transform: capitalize;
     margin-bottom: 45px;
 }
 
@@ -256,7 +255,7 @@ body._lock {
 }
 
 .section_1_animation3 {
-    background-image: url(./src/section_1_animation3.jpg);
+    background-image: url(./src/section_1_animation3.png);
 }
 
 .page__section_2__container {
@@ -512,7 +511,7 @@ body._lock {
 }
 
 .review__img-1 {
-    background-image: url(./src/review_1.png);
+    background-image: url(./src/review_1.jpg);
 }
 
 .review__img-2 {
