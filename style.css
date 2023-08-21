@@ -68,7 +68,7 @@ body._lock {
 }
 
 .page{
-    padding: 75px 0px 30px 0px;
+    padding-top: 75px;
 }
 
 .page__section{
@@ -273,7 +273,6 @@ body._lock {
     font-style: normal;
     font-weight: 800;
     line-height: 150%; /* 42px */
-    text-transform: capitalize;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -574,9 +573,9 @@ body._lock {
     width: fit-content;
     margin: 0 auto 40px;
     text-align: center;
+    padding: 0px 5px;
 }
 
-/* Стили для формы */
 form {
     max-width: 50%;
     margin: 0 auto;
@@ -584,27 +583,24 @@ form {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  /* Стили для меток (labels) */
-  label {
+label {
     display: block;
     margin: 8px 0px;
     font-weight: bold;
-  }
-  
-  /* Стили для текстовых полей (input[type="text"]) и поля номера телефона (input[type="tel"]) */
-  input[type="text"],
-  input[type="tel"] {
+}
+
+input[type="text"],
+input[type="tel"] {
     width: 100%;
     padding: 10px 0px 10px 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 3px;
-  }
-  
-  /* Стили для кнопки отправки формы */
-  button[type="submit"] {
+}
+
+button[type="submit"] {
     background-color: #DC4298;
     color: #fff;
     padding: 10px 20px;
@@ -613,66 +609,53 @@ form {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
+}
+
+button[type="submit"]:hover {
     box-shadow: 2px 2px 10px #df56a3;
     border-bottom: 0px;
-  }
+}
 
-  footer {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 50px;
-    max-width: 1200px;
-    margin: 0px auto;
-    padding: 0px 20px 20px 20px;
-  }
-
-  .footer-1 {
-    width: 30%;
-  }
-
-  .footer__text {
-    text-align: justify;
-    line-height: 150%; /* 30px */
-  }
-
-  .footer__title {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%; /* 30px */
-    letter-spacing: 0.4px;
-    margin-bottom: 20px;
-    width: fit-content;
-    margin: 10px auto;
-  }
-
-  .footer-2 {
-    width: 30%;
-  }
-
-  .footer__link {
-    text-decoration: none;
-    color: #DC4298;
-    padding: 5px;
-    display: block;
-    width: fit-content;
-    margin: -5px auto 5px;
-
-  }
-
-  .footer__link a {
-    text-decoration: none;
-    color: #DC4298;
-  }
-
-  .page__section_1__content {
+.page__section_1__content {
     margin-bottom: -50px;
 }
 
+footer {
+    background-color: #4D4D4D;
+}
 
+.footer__container {
+    padding: 30px 5%;
+    color: #FFF;
+    margin: 0px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer__container a {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #b03c7e;
+    color: #FFF;
+    transition: all 0.3s ease;
+}
+
+.footer__container a:hover {
+    box-shadow: 2px 2px 10px #DC4298;
+}
+
+.footer__remark {
+    font-size: 12px;
+}
 
 @media (min-width: 767px) {
     .menu__list {
@@ -1106,9 +1089,5 @@ form {
 }
 
 ._notCurrentLang {
-    display: none;
-}
-
-footer {
     display: none;
 }
