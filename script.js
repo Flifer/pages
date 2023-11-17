@@ -99,14 +99,17 @@ function validateForm(event) {
       return;
     }
     
-    if (phoneNumber.length < 10) {
-      alert('Номер телефона должен содержать минимум 10 знаков');
+    if (phoneNumber.length < 9) {
+      alert('Номер телефона должен содержать минимум 9 знаков');
       return;
     }
 
+    const newContact = getContact();
+
     let text = 'Спасибо ' + firstName + ' ' + lastName + ' мы постараемся с вами связаться как можно скорее'
 
-    alert(text);
+    ContactApi.create(newContact)
+    .then(alert(text));
     clearForm();
   }
 
@@ -122,6 +125,14 @@ function validateForm(event) {
       }
     }
   }
+
+  function getContact() {
+    return {
+        name: document.getElementById('firstName').value.trim(),
+        surname: document.getElementById('lastName').value.trim(),
+        number: document.getElementById('phoneNumber').value.trim(),
+    };
+}
   
   const form = document.getElementById('myForm');
   form.addEventListener('submit', validateForm);
