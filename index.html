@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Krevetka.ua</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="stylesheet" href="css/fl-chapps.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/google-map.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+
+    <script src='js/device.min.js'></script>
+</head>
+<body>
+<div class="page">
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header>
+        <div class="header_cnt">
+            <div class="container center">
+                <div class="brand">
+                    <!-- <h1 class="brand_name">
+                        <a href="./">Krevetka.ua</a>
+                    </h1>
+
+                    <p class="brand_slogan">
+                        Найкращі морепродукти
+                    </p> -->
+                    <img class="logo" src="images/logo.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="camera_container">
+            <div class="square"></div>
+            <!-- <div class="square2"></div> -->
+            <!-- <div class="cam_cnt1">
+                <div class="cam_cnt">
+                    <h3>Влаштувати онлайн зустріч</h3>
+
+                    <form id="bookingForm" class="booking-form">
+                        <div class="tmInput fl-chapps-user139">
+                            <input name="Name" placeHolder="Ваше ім'я" type="text"
+                                   data-constraints='@NotEmpty @Required @AlphaSpecial'>
+                        </div>
+                        <div class="cntr">
+                            <div class="col">
+                                <div class="tmInput fl-chapps-pen55">
+                                    <input name="Guests" placeHolder="ID" type="text"
+                                           data-constraints='@NotEmpty @Required @JustNumbers'>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label class="tmDatepicker fl-chapps-weekly10">
+                                    <input type="text" name="Date" placeHolder='Дата'
+                                           data-constraints="@NotEmpty @Required @Date">
+                                </label>
+                            </div>
+                            <div class="col">
+                                <select name="Time fl-chapps-weekly10" class="tmSelect manual"
+                                        data-constraints="@NotEmpty @Required">
+                                    <option>Час</option>
+                                    <option>9:00</option>
+                                    <option>12:00</option>
+                                    <option>15:00</option>
+                                    <option>18:00</option>
+                                    <option>21:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <a href="#" class="btn" data-type="submit">Reserve now!</a>
+                    </form>
+                </div>
+                <img src="images/bg2.png" alt=""/>
+            </div> -->
+            <div id="camera" class="camera_wrap">
+                <div data-src="images/shrimp1.png">
+                    <div class="camera_caption fadeIn">
+                    </div>
+                </div>
+                <div data-src="images/shrimp2.png">
+                    <div class="camera_caption fadeIn">
+
+                    </div>
+                </div>
+                <div data-src="images/shrimp3.png">
+                    <div class="camera_caption fadeIn">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main>
+        <section class="well center">
+            <div class="container">
+                </br>
+                <h2>Ласкаво просимо</h2>
+                <h6>Вітаємо на найбільшій фермі з вирощування креветок у регіоні — місце, де передові технології поєднуються з турботою про природу. Ми створюємо ідеальні умови для вирощування екологічно чистих і смачних креветок, дотримуючись найвищих стандартів якості. Наша місія — запропонувати споживачам свіжий, безпечний і сталий продукт, вирощений з повагою до морської екосистеми та з увагою до кожної деталі виробництва.</h6>
+                <img src="images/page-1_img01.png" alt=""/>
+            </div>
+        </section>
+        <section class="well1 bg-secondary2">
+            <div class="container">
+                <h2 class="center">Наша мета</h2>
+                <ul class="index-list row">
+                    <li class="grid_4 wow fadeInUp">
+                        <h5>Забезпечення високоякісного та безпечного продукту</h5>
+                        <p>Вирощуємо креветок у контрольованому середовищі без використання шкідливих добавок чи антибіотиків, дбаючи про здоров’я споживачів.</p>
+                    </li>
+                    <li class="grid_4 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5>Сталий розвиток та екологічна відповідальність</h5>
+
+                        <p>Впроваджуємо сучасні технології, які мінімізують вплив на довкілля та сприяють збереженню морських ресурсів.</p>
+                    </li>
+                    <li class="grid_4 wow fadeInUp" data-wow-delay="0.4s">
+                        <h5>Розвиток сучасної аквакультури в Україні</h5>
+
+                        <p>Прагнемо стати прикладом ефективного та інноваційного бізнесу, створюючи робочі місця та сприяючи продовольчій незалежності країни.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="well2 bg-img">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_4 preffix_8">
+                        <h3 class="media_off_left"><span>Найкращий</span>досвід & висока якість довкілля</h3>
+
+                        <p class="media_off_left"><strong>Завдяки інноваційному підходу ми впроваджуємо стандарти світового рівня, поєднуючи технології, турботу про довкілля та безкомпромісну якість.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="center well2__ins">
+            <div class="container">
+                <h2 class="center">Галерея</h2>
+            </div>
+            <ul class="inline-list">
+                <li><a class="thumb" href="images/page-1_img02_original.jpg" data-fancybox-group="1">
+                    <img src="images/page-1_img02.jpg" alt=""/>
+
+                    <div class="thumb_overlay">
+                        <div class="thumb_overlay_cnt">
+                            <h4>Краб</h4>
+                            <p>Вирощений на 100% органічних кормах</p>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a class="thumb" href="images/page-1_img03_original.jpg" data-fancybox-group="1">
+                    <img src="images/page-1_img03.jpg" alt=""/>
+
+                    <div class="thumb_overlay">
+                        <div class="thumb_overlay_cnt">
+                            <h4>Креветка</h4>
+
+                            <p>Символ нашої ферми — ніжна й вишукана</p>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a class="thumb" href="images/page-1_img04_original.jpg" data-fancybox-group="1">
+                    <img src="images/page-1_img04.jpg" alt=""/>
+
+                    <div class="thumb_overlay">
+                        <div class="thumb_overlay_cnt">
+                            <h4>Восьминіг</h4>
+
+                            <p>Молоді восьминоги, вирощені у повністю контрольованих умовах</p>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a class="thumb" href="images/page-1_img05_original.jpg" data-fancybox-group="1">
+                    <img src="images/page-1_img05.jpg" alt=""/>
+
+                    <div class="thumb_overlay">
+                        <div class="thumb_overlay_cnt">
+                            <h4>Рак</h4>
+
+                            <p>Екологічно чисті річкові раки</p>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a class="thumb" href="images/page-1_img06_original.jpg" data-fancybox-group="1">
+                    <img src="images/page-1_img06.jpg" alt=""/>
+
+                    <div class="thumb_overlay">
+                        <div class="thumb_overlay_cnt">
+                            <h4>Риба</h4>
+
+                            <p>Мешкають згаями та повністю відтворюють природні умови</p>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a class="thumb" href="images/page-1_img07_original.jpg" data-fancybox-group="1">
+                    <img src="images/page-1_img07.jpg" alt=""/>
+
+                    <div class="thumb_overlay">
+                        <div class="thumb_overlay_cnt">
+                            <h4>Устриці</h4>
+
+                            <p>Натуральні устриці, вирощені на морських рифах</p>
+                        </div>
+                    </div>
+                </a></li>
+            </ul>
+        </section>
+        <section class="well3">
+            <div class="container">
+                <h2 class="center">Новини та події</h2>
+
+                <div class="row">
+                    <div class="grid_4 bord ins wow fadeInUp">
+                        <time datetime="2015-01-01">22 березня 2025</time>
+                        <p class="mod">Ми зробили ще один крок до сталого розвитку — тепер частина енергії на нашій фермі надходить від сонця. Це дозволяє зменшити викиди CO₂ та зберегти чистоту навколишнього середовища.</p>
+                    </div>
+                    <div class="grid_4 bord ins wow fadeInUp" data-wow-delay="0.4s">
+                        <time datetime="2015-01-01">08 лютого 2025</time>
+                        <p class="mod">Запускаємо освітню програму для школярів! Екскурсії, знайомство з креветками та інтерактивні заняття на нашій фермі — тепер доступні щотижня.</p>
+                    </div>
+                    <div class="grid_4 bord ins wow fadeInUp" data-wow-delay="0.6s">
+                        <time datetime="2015-01-01">10 січня 2025</time>
+                        <p class="mod">Ферма отримала сертифікацію на експорт креветок до країн Європейського Союзу. Це новий крок до міжнародного визнання української аквакультури.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="well4 bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_6 wow fadeInLeft">
+                        <img src="images/page-1_img08.jpg" alt=""/>
+                    </div>
+                    <div class="grid_6 wow fadeInRight">
+                        <h3><span>НАШІ КРЕВЕТКИ -</span>
+                            СТАНДАРТ МАЙБУТНЬОГО</h3>
+
+                        <p class="off">Ми вирощуємо креветок у контрольованому середовищі, використовуючи чисту воду, природне живлення та інноваційні технології. Кожен етап — від личинки до дорослої особини — проходить під ретельним наглядом фахівців, щоб забезпечити найвищу якість і безпеку.</p>
+
+                        <p>Це більше, ніж ферма — це жива екосистема, створена з турботою.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <bиИии>
+        <div class="footer_cnt">
+            <div class="container">
+                <h2 class="center">Відгуки</h2>
+
+                <div class="row">
+                    <div class="grid_6 shadow bg-primary wow fadeInLeft">
+                        <blockquote class="box">
+                            <div class="box_aside">
+                                <img src="images/page-1_img09.jpg" alt=""/>
+                            </div>
+                            <div class="box_cnt__no-flow">
+                                <cite>Марія Сидоренко</cite>
+                                <q><span>“</span>Я була приємно вражена умовами, в яких вирощуються креветки. Справжня турбота про довкілля у кожному процесі. Я такого не бачила на жодній з ферм. Це викликає довіру</q>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <div class="grid_6 shadow bg-primary wow fadeInRight">
+                        <blockquote class="box">
+                            <div class="box_aside">
+                                <img src="images/page-1_img10.jpg" alt=""/>
+                            </div>
+                            <div class="box_cnt__no-flow">
+                                <cite>Євген Коломієць</cite>
+                                <q><span>“</span>Ферма — на найвищому технологічному рівні. Сучасне обладнання, кваліфікована команда і відповідальний підхід. Обираю саме їхню продукцію і раджу своїм знайомим. </q>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+                <address class="center">65000, Україна, Одеська обл., м. Одеса <br/>
+                    
+                </address>
+                <!-- <div class="inline-list2_wrap bord center">
+                    <ul class="inline-list2">
+                        <li><a class="fa-twitter" href="#"></a></li>
+                        <li><a class="fa-facebook-f" href="#"></a></li>
+                        <li><a class="fa-google-plus" href="#"></a></li>
+                        <li><a class="fa-rss" href="#"></a></li>
+                        <li><a class="fa-pinterest" href="#"></a></li>
+                        <li><a class="fa-linkedin" href="#"></a></li>
+                    </ul>
+                </div> -->
+                <div class="copyright center">
+                    © <span id="copyright-year"></span> |
+                    Всі права захищені
+                    <!-- {%FOOTER_LINK} -->
+                </div>
+            </div>
+        </div>
+        <!-- <div class="map">
+            <div class="square3"></div>
+            <div id="google-map" class="map_model" data-zoom="13"></div>
+            <div class="google-map-container" ></div>
+            <ul class="map_locations">
+                <li data-x="-73.9874068" data-y="40.643180">
+                    <p> 65000, Україна, Одеська обл., м. Одеса<span>800 2345-6789</span></p>
+                </li>
+            </ul>
+        </div> -->
+    </br>
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+
+<!--coded by Morpeh-->
+
+</body>
+</html>
